@@ -1,0 +1,36 @@
+.body1 {
+    background-image: url('assets/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 115vh; /* Para que la imagen cubra toda la altura de la pantalla */
+}
+
+/* Estilos del botón */
+.botoninicio {
+    background-color: #a94547; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 50px; /* Tamaño del texto */
+    text-decoration: none; /* Quita el subrayado */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 150px 700px; /*Espacio desde arriba y a la izquierda */
+    border-radius: 20px; /* Bordes redondeados */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    transition: 0.3s; /* Suaviza el cambio de color */
+}
+
+.botonatras {
+    background-color: #a94547; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 15px; /* Tamaño del texto */
+    text-decoration: none; /* Quita el subrayado */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 10px 10px; /*Posicion? */
+    border-radius: 20px; /* Bordes redondeados */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    transition: 0.3s; /* Suaviza el cambio de color */
+}
+
+p {padding: 10px 20px;}
