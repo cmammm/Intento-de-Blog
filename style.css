@@ -1,17 +1,5 @@
-.body1 {
+body {
     background-image: url('assets/fondo.png');
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* 🔥 Hace que la imagen NO se mueva con el scroll */
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Usa min-height en vez de height fija */
-    overflow: hidden; /* 🔥 Evita que haya scroll si no es necesario */
-}
-
-.body2 {
-    background-image: url('assets/fondo_menu.png');
     background-size: cover; /* Cubre toda la pantalla */
     background-position: center;
     background-repeat: no-repeat;
@@ -37,49 +25,6 @@
     transition: 0.3s;
 }
 
-.botonmusica {
-    position: fixed; /* 🔥 Fija el botón en la pantalla */
-    top: 18%; /* Lo centra verticalmente */
-    left: 25%; /* Lo centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste preciso para centrarlo */
-    background-color: #a94547;
-    color: #ffdedb;
-    font-size: 40px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    display: inline-block;
-    transition: 0.3s;
+.botoninicio:hover {
+  transform: scale(1.1) translate(-50%, -50%);
 }
-
-.botonporta {
-    position: fixed; /* 🔥 Fija el botón en la pantalla */
-    top: 18%; /* Lo centra verticalmente */
-    left: 50%; /* Lo centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste preciso para centrarlo */
-    background-color: #a94547;
-    color: #ffdedb;
-    font-size: 40px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.botonconcer {
-    position: fixed; /* 🔥 Fija el botón en la pantalla */
-    top: 18%; /* Lo centra verticalmente */
-    left: 75%; /* Lo centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste preciso para centrarlo */
-    background-color: #a94547;
-    color: #ffdedb;
-    font-size: 40px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-p {padding: 10px 20px;}
