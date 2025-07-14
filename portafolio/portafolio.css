@@ -1,5 +1,5 @@
 body {
-    background-image: url('../assets/fondo_portafolio_2.jpg');
+    background-image: url('../assets/fondo_portafolio.jpg');
     background-size: cover; /* Cubre toda la pantalla */
     background-position: center;
     background-repeat: no-repeat;
@@ -13,14 +13,8 @@ body {
 .contenedor {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   margin-top: 10vh;
-}
-
-.contenedor2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
 }
 
 .imgboton {
