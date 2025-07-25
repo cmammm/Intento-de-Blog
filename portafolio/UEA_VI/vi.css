@@ -49,3 +49,63 @@ body, html {
     display: block;
     margin: 0 auto;
 }
+
+.carrusel-container {
+  position: absolute;
+  top: 68%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 1000px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.carrusel {
+  position: relative;
+  height: 60vh;
+  max-height: 600px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.slide img, .slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 2px solid #33f;
+  box-shadow: 0 0 20px #33f;
+  border-radius: 8px;
+}
+
+.indicadores {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #888;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #33f;
+}
