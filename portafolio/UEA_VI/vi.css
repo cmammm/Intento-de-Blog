@@ -109,3 +109,19 @@ body, html {
 .dot.active {
   background-color: #33f;
 }
+
+.contenido2 {
+    position: absolute;
+    top: 103%; /* mueve el contenido hacia abajo (ajusta este valor a tu gusto) */
+    left: 20%; /* lo acerca más al borde izquierdo */
+    transform: translateY(-10%); /* centrado vertical relativo al top */
+    padding: 20px; /* espacio interno del cuadro azul */
+    /*max-width: 25%; /* puedes ajustar el ancho si es necesario */
+}
+
+.contenido2 img {
+    max-width: 80%; /*ajusta el tamaño*/
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
