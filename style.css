@@ -12,11 +12,11 @@ body {
 
 .botoninicio {
     position: fixed; /* 🔥 Fija el botón en la pantalla */
-    top: 25%; /* Lo centra verticalmente */
-    left: 80%; /* Lo centra horizontalmente */
+    top: 28%; /* Lo centra verticalmente */
+    left: 55%; /* Lo centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajuste preciso para centrarlo */
-    background-color: #a94547;
-    color: white;
+    background-color: #320746;
+    color: #ffe9ac;
     font-size: 60px;
     text-decoration: none;
     padding: 10px 20px;

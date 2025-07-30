@@ -1,69 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-image: url('../assets/fondo_menu_1.png');
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* 🔥 Hace que la imagen NO se mueva con el scroll */
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Usa min-height en vez de height fija */
-    overflow: hidden; /* 🔥 Evita que haya scroll si no es necesario */
+  overflow: auto;
+  font-family: sans-serif;
 }
 
-.botonmusica {
-    position: fixed; /* 🔥 Fija el botón en la pantalla */
-    top: 18%; /* Lo centra verticalmente */
-    left: 25%; /* Lo centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste preciso para centrarlo */
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 40px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    display: inline-block;
-    transition: 0.3s;
+.scroll-container {
+  display: flex;
+  width: 400vw;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
-.botonporta {
-    position: fixed; /* 🔥 Fija el botón en la pantalla */
-    top: 18%; /* Lo centra verticalmente */
-    left: 50%; /* Lo centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste preciso para centrarlo */
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 40px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    display: inline-block;
-    transition: 0.3s;
+.slide {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.botonconcer {
-    position: fixed; /* 🔥 Fija el botón en la pantalla */
-    top: 18%; /* Lo centra verticalmente */
-    left: 75%; /* Lo centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste preciso para centrarlo */
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 40px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    display: inline-block;
-    transition: 0.3s;
+.boton {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  padding: 10px 25px;
+  background-color: rgba(173, 216, 230, 0.5); /* azul clarito translúcido */
+  backdrop-filter: blur(10px);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
-
-.botonmusica:hover {
-  transform: scale(1.1) translate(-50%, -50%);
-}
-
-.botonporta:hover {
-  transform: scale(1.1) translate(-50%, -50%);
-}
-
-.botonconcer:hover {
-  transform: scale(1.1) translate(-50%, -50%);
+.boton:hover {
+  background-color: rgba(173, 216, 230, 0.8); /* azul clarito más sólido */
+  transform: translate(-50%, -50%) scale(1.05);
 }

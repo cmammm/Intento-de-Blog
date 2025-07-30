@@ -8,14 +8,26 @@
 </head>
 <body>
     
-    <div>
-        <a href="../musica/musica.html" class= "botonmusica">ᗰᑌᔕᎥᑕᗩ</a>
-    </div>
-    <div>
-        <a href="../portafolio/portafolio.html" class="botonporta">ᑭᗝᖇ丅ᗩᖴᗝᒪᎥᗝ</a>
-    </div>
-    <div>
-        <a href="../conciertos/conciertos.html" class="botonconcer">ᑕᗝᑎᑕᎥᗴᖇ丅ᗝᔕ</a>
+    <div class="scroll-container">
+    
+    <!-- Slide 1 (solo imagen) -->
+        <section class="slide" style="background-image: url('/assets/fondo_menu1.png');"></section>
+
+    <!-- Slide 2: Portafolio -->
+        <section class="slide" style="background-image: url('/assets/fondo_menu2.png');">
+            <a href="../portafolio/portafolio.html" class="boton">ᑭᗝᖇ丅ᗩᖴᗝᒪᎥᗝ</a>
+        </section>
+
+    <!-- Slide 3: Música -->
+        <section class="slide" style="background-image: url('/assets/fondo_menu3.png');">
+            <a href="../musica/musica.html" class="boton">ᗰᑌᔕᎥᑕᗩ</a>
+        </section>
+
+    <!-- Slide 4: Conciertos -->
+        <section class="slide" style="background-image: url('/assets/fondo_menu4.png');">
+            <a href="../conciertos/conciertos.html" class="boton">ᑕᗝᑎᑕᎥᗴᖇ丅ᗝᔕ</a>
+        </section>
+
     </div>
 
     <script src="menu.js"></script>
