@@ -31,9 +31,6 @@ body {
 
 .boton {
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 40px;
   padding: 10px 25px;
   background-color: rgba(173, 216, 230, 0.5); /* azul clarito translúcido */
@@ -45,7 +42,44 @@ body {
   transition: 0.3s;
 }
 
+/* Posiciones específicas por botón */
+.boton-portafolio {
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.boton-musica {
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.boton-conciertos {
+  top: 56%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hover común */
 .boton:hover {
-  background-color: rgba(173, 216, 230, 0.8); /* azul clarito más sólido */
+  background-color: rgba(173, 216, 230, 0.8);
   transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Ejemplo de scroll horizontal si lo necesitas */
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
