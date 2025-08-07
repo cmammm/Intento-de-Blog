@@ -7,54 +7,70 @@
     <link rel="stylesheet" href="vi.css">
 </head>
 <body>
+    <!-- Video de fondo -->
     <div class="video-bg">
         <video autoplay muted loop id="background-video">
-            <source src="../assets/vi/fondo_vi.mp4" type="video/mp4">
+            <source src="../assets/vi/fondo_vi.mp4" type="video/mp4" />
             Tu navegador no soporta video.
         </video>
     </div>
 
-    <div class="titulo">
-        <img src="../assets/vi/nombre_vi.png" alt="Título AUSENCIA">
-    </div>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Título -->
+        <div class="titulo">
+            <img src="../assets/vi/nombre_vi.png" alt="Título AUSENCIA" />
+        </div>
 
-    <div class="contenido">
-        <img src="../assets/vi/ficha_tec_vi.png" alt="Ficha tecnica">
-    </div>
+        <!-- Ficha técnica -->
+        <div class="contenido">
+            <img src="../assets/vi/ficha_tec_vi.png" alt="Ficha técnica" />
+        </div>
 
-    <div class="carrusel-container">
-        <div class="carrusel">
-            <div class="slide active"><img src="../assets/vi/elem_moodboard.png" alt="Foto 1" /></div>
-            <div class="slide"><img src="../assets/vi/elem_moodboard_2.png" alt="Foto 2" /></div>
-            <div class="slide"><img src="../assets/vi/elem_codigo.png" alt="Foto 3" /></div>
-            <div class="slide">
-                <video muted loop width="100%">
-                    <source src="../assets/vi/elem_fondo.mp4" type="video/mp4" />
-                    Tu navegador no soporta video.
-                </video>
+        <!-- Carrusel -->
+        <div class="carrusel-container">
+            <div class="carrusel">
+                <div class="slide active"><img src="../assets/vi/elem_moodboard.png" alt="Foto 1" /></div>
+                <div class="slide"><img src="../assets/vi/elem_moodboard_2.png" alt="Foto 2" /></div>
+                <div class="slide"><img src="../assets/vi/elem_codigo.png" alt="Foto 3" /></div>
+                <div class="slide">
+                    <video muted loop width="100%">
+                        <source src="../assets/vi/elem_fondo.mp4" type="video/mp4" />
+                        Tu navegador no soporta video.
+                    </video>
+                </div>
+                <div class="slide"><img src="../assets/vi/elem_coloquio2.jpg" alt="Foto 5" /></div>
+                <div class="slide"><img src="../assets/vi/elem_sonido.jpg" alt="Foto 6" /></div>
+                <div class="slide"><img src="../assets/vi/elem_pruebas.jpg" alt="Foto 7" /></div>
             </div>
-            <div class="slide"><img src="../assets/vi/elem_coloquio2.jpg" alt="Foto 5" /></div>
+
+            <!-- Indicadores -->
+            <div class="indicadores">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
 
-        <div class="indicadores">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <!-- Proceso -->
+        <div class="contenido2">
+            <img src="../assets/vi/proceso_vi.png" alt="Proceso" />
         </div>
-    </div>
 
-    <div class="contenido2">
-        <img src="../assets/vi/proceso_vi.png" alt="proceso">
-    </div>
+        <!-- Link a Instagram -->
+        <div class="link-container">
+            <a href="https://www.instagram.com/ckam_01?igsh=MXQ3anFybjJjdXNjNw%3D%3D&utm_source=qr" target="_blank">
+                <img src="/portafolio/assets/vi/ig_blog.png" class="imagen-link" alt="Instagram" />
+            </a>
+            <p class="link-text">@ckam_01</p>
+        </div>
+    </main>
 
-    <div class="link">
-        <a href="ruta/a/otra_pagina.html">
-            <img src="ruta/a/tu_imagen.png" alt="Texto alternativo" class="imagen-link">
-        </a>
-    </div>
-
+    <!-- Script del carrusel -->
     <script src="vi.js"></script>
 
 </body>

@@ -4,11 +4,10 @@ body, html {
     min-height: 100vh;
     font-family: sans-serif;
     color: white;
-    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-
-/* video de fondo */
+/* VIDEO DE FONDO */
 .video-bg {
     position: fixed;
     top: 0;
@@ -19,126 +18,134 @@ body, html {
     overflow: hidden;
 }
 
-.titulo {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px; /*espacio alrededor de la imagen*/
+/* SECCIÓN PRINCIPAL */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
 }
 
+/* TITULO */
 .titulo img {
-    max-width: 80%; /* ajusta el tamaño*/
+    max-width: 80%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-.contenido {
-    position: absolute;
-    top: 45%; /* mueve el contenido hacia abajo (ajusta este valor a tu gusto) */
-    left: -8%; /* lo acerca más al borde izquierdo */
-    transform: translateY(-10%); /* centrado vertical relativo al top */
-    padding: 20px; /* espacio interno del cuadro azul */
-    /*max-width: 25%; /* puedes ajustar el ancho si es necesario */
-}
-
-.contenido img {
-    max-width: 50%; /*ajusta el tamaño*/
+/* CONTENIDO */
+.contenido img,
+.contenido2 img {
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
+.contenido, .contenido2 {
+    width: 80%;
+    text-align: center;
+}
+
+/* CARRUSEL */
 .carrusel-container {
-  position: absolute;
-  top: 68%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  width: 90vw;
-  max-width: 1000px;
-  overflow: hidden;
-  text-align: center;
+    width: 90vw;
+    max-width: 1000px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .carrusel {
-  position: relative;
-  height: 60vh;
-  max-height: 600px;
+    position: relative;
+    height: 60vh;
+    max-height: 600px;
 }
 
 .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .slide.active {
-  opacity: 1;
-  position: relative;
+    opacity: 1;
+    position: relative;
 }
 
 .slide img, .slide video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border: 2px solid #33f;
-  box-shadow: 0 0 20px #33f;
-  border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 2px solid #33f;
+    box-shadow: 0 0 20px #33f;
+    border-radius: 8px;
 }
 
 .indicadores {
-  margin-top: 10px;
-  text-align: center;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 4px;
-  background-color: #888;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #888;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .dot.active {
-  background-color: #33f;
+    background-color: #33f;
 }
 
-.contenido2 {
-    position: absolute;
-    top: 103%; /* mueve el contenido hacia abajo (ajusta este valor a tu gusto) */
-    left: 20%; /* lo acerca más al borde izquierdo */
-    transform: translateY(-10%); /* centrado vertical relativo al top */
-    padding: 20px; /* espacio interno del cuadro azul */
-    /*max-width: 25%; /* puedes ajustar el ancho si es necesario */
-}
-
-.contenido2 img {
-    max-width: 80%; /*ajusta el tamaño*/
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.link {
-  position: absolute;
-  top: 80%;
-  left: 90%;
-  transform: translate(-50%, -50%);
+/* INSTAGRAM LINK + TEXTO */
+.link-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .imagen-link {
-  width: 80px;
-  height: auto;
-  transition: transform 0.3s ease;
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 .imagen-link:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.link-text {
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    main {
+        gap: 20px;
+        padding: 30px 10px;
+    }
+
+    .slide {
+        height: 50vh;
+    }
+
+    .imagen-link {
+        width: 30px;
+    }
+
+    .link-text {
+        font-size: 16px;
+    }
 }
