@@ -90,13 +90,16 @@ main {
 .indicadores {
     margin-top: 10px;
     text-align: center;
+    position: relative;
+    z-index: 10; /* asegura que queden encima de las imágenes/videos */
 }
 
 .dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 4px;
-    background-color: #888;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: white; /* más contraste */
+    border: 2px solid #33f; /* borde azul */
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
